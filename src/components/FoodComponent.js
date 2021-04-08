@@ -100,8 +100,10 @@ const Food = (props) => {
 
   return (
     <Container className="themed-container" fluid={true} style={{backgroundColor: '#A9B3CE'}}>
+        <Row><p></p></Row>
         <Row>
-        <div className="col-12 col-lg-5 order-lg-2">
+            <div className="col-lg-1 order-lg-1"></div>
+            <div className="col-12 col-lg-5 order-lg-3">
                 <Carousel
                     size="md"
                     activeIndex={activeIndex}
@@ -114,14 +116,29 @@ const Food = (props) => {
                     <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                 </Carousel>    
             </div>
-            <div className="col-12 col-lg-7 order-lg-1">
-                <Media body className="ml-7">
-                    <Media heading>Food!</Media>
-                    <p>Information about food!!</p>
-
+            <div className="col-12 col-lg-5" style={{display: 'flex', alignItems: 'center'}}>
+                <Media body className="ml-5">
+                    <Media heading>Food</Media>
+                    <p>
+                        Cooking new things is an activity that has always excited me.  Primarily I like to grill, 
+                        and there is no temperature that is too cold (okay, -35°C is getting there).  I also enjoy 
+                        chili’s, gumbo’s, and an assortment of other dishes.  It is fun to have a new challenging 
+                        dish to cook.
+                    </p>
+                    <p>
+                        For a long time I only did propane grilling.  This changed in 2019 when I picked up an egg 
+                        charcoal grill.  It’s not the best option on the market, but one day I’ll upgrade it.  Either 
+                        way, it was a game changer!
+                    </p>
+                    <p>
+                        My favorite place to get meat is a butcher out in Sherwood Park called “<a href="https://www.facebook.com/charliesmeatss/">Charlies Place</a>.”  
+                        The quality is much better than I have ever gotten at a chain store, and the price isn’t too bad!
+                    </p>
                 </Media>
             </div>
+            <div className="col-lg-1 order-lg-4"></div>
         </Row>
+        <Row><p></p></Row>
         
     </Container>
   );

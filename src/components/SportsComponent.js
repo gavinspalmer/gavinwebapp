@@ -99,7 +99,9 @@ const Sports = (props) => {
 
   return (
     <Container className="themed-container" fluid={true} style={{backgroundColor: '#8CFBDE'}}>
+        <Row><p></p></Row>
         <Row>
+            <div className="col-lg-1"></div>
             <div className="col-12 col-lg-5">
                 <Carousel
                     size="md"
@@ -113,15 +115,32 @@ const Sports = (props) => {
                     <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                 </Carousel>    
             </div>
-            <div className="col-12 col-lg-7">
-                <Media body className="ml-7">
-                    <Media heading>Sporting Events!</Media>
-                    <p>Information about sporting events!!</p>
+            <div className="col-12 col-lg-5" style={{display: 'flex', alignItems: 'center'}}>
+                <Media body className="ml-5">
+                    <Media heading>Sporting Events</Media>
+                    <p>
+                        While I don’t often watch many sports on TV (exception for NFL and some playoff games) 
+                        I do enjoy attending live sporting events.  Hocky and CFL are the options for us in Edmonton.  
+                        We have also worked a number of trips around NFL games (Seattle, LA, New Orleans).
+                    </p>
+                    <p>
+                        Teams I enjoy cheering for:
+                    </p>
+                    <li>
+                        CFL – Calgary Stampeders (primary), Edmonton Football Club (secondary)
+                    </li>
+                    <li>
+                        NFL – Seattle Seahawks (primary), New Orleans Saints (secondary)
+                    </li>
+                    <li>
+                        Hockey – Calgary Flames
+                    </li>
 
                 </Media>
             </div>
+            <div className="col-lg-1"></div>
         </Row>
-        
+        <Row><p></p></Row>
     </Container>
   );
 }
