@@ -5,12 +5,19 @@
 
 .btn {
   color:azure;
-  background-color: #557A95;
-  outline: #557A95;
+  background-color: #E58F65;
+  outline: #E58F65;
 }
 
 .modal-header{
   color:azure;
   background-color: #5D5C61;
   
+}
+
+.card-img {
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
