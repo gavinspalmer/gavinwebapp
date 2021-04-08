@@ -25,14 +25,26 @@ class Header extends Component {
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/">
+                        <NavbarBrand className="mr-auto" href="/" tag="h1">
                             Gavin's Profile
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="ml-auto" navbar>
-                                <Button type="home" name="home" style={{marginRight:"5px"}}>Home</Button>
-                                <Button type="about" name="about" style={{marginRight:"5px"}}>About</Button>
-                                <Button type="experience" name="experience" style={{marginRight:"5px"}}>Experience</Button>
+                                <NavItem>
+                                    <NavLink className="nav-link" to ='/home'>
+                                        <Button type="home" name="home" style={{marginRight:"5px"}}>Home</Button>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to ='/about'>
+                                        <Button type="about" name="about" style={{marginRight:"5px"}}>About</Button>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to ='/experience'>
+                                        <Button type="experience" name="experience" style={{marginRight:"5px"}}>Experience</Button>
+                                    </NavLink>
+                                </NavItem>   
                             </Nav>
                         </Collapse>
                     </div>

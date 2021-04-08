@@ -16,7 +16,12 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <Home />
+                <Switch>
+                    <Route path="/home" component={() => <Home />} />
+                    <Route path="/about" component={() => <About />} />
+
+                    <Redirect to="/home" />
+                </Switch>
             </div>
         );   
     }
